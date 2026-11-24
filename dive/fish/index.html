@@ -8,7 +8,7 @@
 <script>
   // 固定入口：轉到 WTT 潛點氣象報你知公開版。WTT 對外網址換了會由 WTT 自動改這行（core/ghpages_redirect.py）。
   var BASE = "https://pst-illustrated-draft-optimize.trycloudflare.com";
-  location.replace(BASE + "/spearfish-public/fish" + location.hash);
+  location.replace(BASE + "/spearfish-public/fish" + location.search + location.hash);   // 帶著 ?src= 標籤過去
 </script>
 <style>body{font-family:-apple-system,"PingFang TC",sans-serif;background:#f7f3ea;color:#3a3328;display:flex;min-height:90vh;align-items:center;justify-content:center;text-align:center}a{color:#2f6f7e}</style>
 </head>
